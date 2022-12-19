@@ -1,7 +1,7 @@
 import { BotConfig } from './structures/types'; 
 
 export const config: BotConfig = {
-    groupId: 0,
+    groupId: 6680443,
     slashCommands: true,
     legacyCommands: {
         enabled: true,
@@ -24,7 +24,7 @@ export const config: BotConfig = {
         enabled: false,
         type: 'mongodb',
     },
-    api: false,
+    api: true,
     maximumRank: 255,
     verificationChecks: false,
     firedRank: 1,
@@ -49,7 +49,7 @@ export const config: BotConfig = {
         ],
     },
     antiAbuse: {
-        enabled: false,
+        enabled: true,
         clearDuration: 1 * 60,
         threshold: 5,
         demotionRank: 1,
@@ -61,5 +61,5 @@ export const config: BotConfig = {
         value: 'for commands.',
     },
     status: 'online',
-    deleteWallURLs: false,
+    deleteWallURLs: true,
 }
